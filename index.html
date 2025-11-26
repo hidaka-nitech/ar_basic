@@ -19,7 +19,7 @@
     >
       <a-assets>
         <!-- 3Dモデルを読み込む -->
-        <a-asset-item id="cube" src="cube.glb" position="0 0.5 0" scale="1 1 1" opacity="0.3"></a-asset-item>
+        <a-asset-item id="cube" src="cube.glb" scale="1 1 1"></a-asset-item>
       </a-assets>
       
       <!-- マーカーを設定する -->
@@ -70,7 +70,7 @@
         type="pattern"
         url="pattern-pik.patt"
       >
-        <a-entity gltf-model="#cube" rotation="0 0 0"></a-entity>
+        <a-entity gltf-model="#cube" rotation="0 0 0" position="0 0.5 0" opacity="0.3"></a-entity>
         </a-marker>
       
       <!-- カメラ -->
