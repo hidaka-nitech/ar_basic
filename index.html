@@ -17,10 +17,18 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false; patternRatio: 0.5;"
     >
+      <a-assets>
+        <!-- 3Dモデルを読み込む -->
+        <a-asset-item id="cube" src="cube.glb" scale="1 1 1"></a-asset-item>
+      </a-assets>
+      
+      <!-- マーカーを設定する -->
       <a-marker
         type="pattern"
         url="pattern-marker.patt"
+        size="0.109"
       >
+        <a-entity gltf-model="#cube" rotation="0 0 0"></a-entity>
         <a-box
           position="0 0.5 0"
           width="1"
